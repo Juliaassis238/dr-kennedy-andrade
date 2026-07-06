@@ -106,16 +106,23 @@
   .stat b{display:block;font-family:'Fraunces',serif;font-size:2rem;color:var(--ink);}
   .stat span{font-size:.74rem;color:var(--ink-dim);letter-spacing:.04em;}
 
-  .hero-visual{position:relative;height:560px;border-radius:2px;overflow:hidden;}
+  .hero-visual{position:relative;height:680px;border-radius:2px;overflow:hidden;box-shadow:0 20px 60px rgba(13,27,61,.15);}
   .hero-visual img{
-    width:100%;height:100%;object-fit:contain;object-position:center;filter:grayscale(0%) contrast(1.05) saturate(1.02);
+    width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(0%) contrast(1.05) saturate(1.02);
+    animation:zoomIn .8s ease-out forwards;
+  }
+  @keyframes zoomIn{
+    from{transform:scale(1.05);opacity:0;}
+    to{transform:scale(1);opacity:1;}
   }
   .hero-visual::after{
     content:'';position:absolute;inset:0;
-    background:linear-gradient(180deg, rgba(13,27,61,0) 45%, rgba(13,27,61,.15) 100%);
+    background:linear-gradient(180deg, rgba(13,27,61,0) 30%, rgba(13,27,61,.25) 100%);
   }
   .hero-overlay{
-    position:absolute;bottom:24px;left:24px;right:24px;z-index:2;
+    position:absolute;bottom:0;left:0;right:0;z-index:2;
+    background:linear-gradient(180deg, rgba(13,27,61,0) 0%, rgba(13,27,61,.8) 60%, rgba(13,27,61,.95) 100%);
+    padding:60px 40px 40px;
     animation:slideUp 1.2s ease-out forwards;
     opacity:0;
   }
@@ -124,10 +131,10 @@
     to{opacity:1;transform:translateY(0);}
   }
   .hero-overlay h2{
-    font-size:2rem;color:#fff;margin-bottom:12px;text-shadow:0 2px 8px rgba(13,27,61,.3);
+    font-size:2.2rem;color:#fff;margin-bottom:12px;text-shadow:0 2px 8px rgba(13,27,61,.4);font-family:'Fraunces',serif;font-weight:600;
   }
   .hero-overlay p{
-    font-size:.95rem;color:#f0f4f8;max-width:400px;text-shadow:0 1px 4px rgba(13,27,61,.2);
+    font-size:.95rem;color:#f0f4f8;max-width:500px;text-shadow:0 1px 4px rgba(13,27,61,.3);line-height:1.5;
   }
   .hero-visual .tag{
     position:absolute;left:24px;bottom:24px;z-index:2;
@@ -338,7 +345,7 @@
         </div>
       </div>
       <div class="hero-visual reveal">
-        <img src="images/dr-kennedy.png" alt="Dr. Kennedy Andrade — Médico especialista em contorno corporal">
+        <img src="images/dr-kennedy-hero.png" alt="Dr. Kennedy Andrade — Médico especialista em contorno corporal">
         <div class="hero-overlay">
           <h2>Dr. Kennedy Andrade</h2>
           <p>Especialista em lipoaspiração fracionada e contorno corporal com foco em resultados naturais e seguros.</p>
@@ -419,6 +426,8 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </section>
 
@@ -430,12 +439,12 @@
       <p>Um retrato dos cuidados oferecidos — do planejamento do contorno corporal à estrutura pensada para o conforto do paciente.</p>
     </div>
     <div class="gallery reveal">
-      <figure class="tall"><img src="images/minilipo.png" alt="Minilipo — contorno abdominal"><figcaption>Minilipo</figcaption></figure>
-      <figure><img src="images/clinica-1.png" alt="Instrumentos médicos — procedimentos estéticos"><figcaption>Instrumentos</figcaption></figure>
-      <figure><img src="images/cervicoplastia.png" alt="Perfil facial — cervicoplastia"><figcaption>Cervicoplastia</figcaption></figure>
-      <figure class="wide"><img src="images/clinica-2.png" alt="Equipamentos médicos de precisão"><figcaption>Equipamentos</figcaption></figure>
-      <figure><img src="images/transplante-capilar.png" alt="Cabelo — transplante capilar"><figcaption>Transplante capilar</figcaption></figure>
-      <figure class="wide"><img src="images/minilipo.png" alt="Procedimento de contorno corporal"><figcaption>Procedimentos</figcaption></figure>
+      <figure class="tall"><img src="images/dr-kennedy-hero.png" alt="Dr. Kennedy Andrade — Especialista"><figcaption>Dr. Kennedy</figcaption></figure>
+      <figure><img src="images/dr-kennedy-action.png" alt="Dr. Kennedy em consulta"><figcaption>Dr. Kennedy</figcaption></figure>
+      <figure><img src="images/minilipo.png" alt="Procedimento de contorno corporal"><figcaption>Minilipo</figcaption></figure>
+      <figure class="wide"><img src="images/procedimento-olhos.png" alt="Procedimento de precisão"><figcaption>Procedimento</figcaption></figure>
+      <figure><img src="images/transplante-capilar.png" alt="Cabelo — transplante capilar"><figcaption>Transplante</figcaption></figure>
+      <figure class="wide"><img src="images/cervicoplastia.png" alt="Perfil facial — cervicoplastia"><figcaption>Cervicoplastia</figcaption></figure>
     </div>
   </div>
 </section>
