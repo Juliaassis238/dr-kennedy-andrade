@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Kennedy Andrade — Lipoaspiração Fracionada &amp; Contorno Corporal</title>
+<meta name="description" content="Dr. Kennedy Andrade — Lipoaspiração fracionada, cervicoplastia e transplante capilar. Duo Clinic Medicina &amp; Odontologia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f2e7;
+    --bg-raise:#efe7d5;
+    --bg-raise-2:#e8dfc8;
+    --ink:#251f19;
+    --ink-dim:#776c5b;
+    --bronze:#8a5a2b;
+    --bronze-deep:#6e4720;
+    --line:#ded1b4;
+    --green:#3c4a3f;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Manrope',sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    letter-spacing:-0.01em;
+    line-height:1.08;
+    color:var(--ink);
+  }
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+  img{display:block;max-width:100%;}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 40px;}
+  :focus-visible{outline:2px solid var(--bronze);outline-offset:4px;}
+
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    padding:26px 0;
+    transition:padding .4s ease, background .4s ease, border-color .4s ease;
+    border-bottom:1px solid transparent;
+  }
+  header.scrolled{
+    padding:14px 0;
+    background:rgba(247,242,231,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav{display:flex;align-items:center;justify-content:space-between;}
+  .brand{font-family:'Fraunces',serif;font-size:1.15rem;letter-spacing:.02em;}
+  .brand small{display:block;font-family:'IBM Plex Mono',monospace;font-size:.55rem;letter-spacing:.18em;color:var(--bronze);text-transform:uppercase;margin-top:2px;}
+  .nav-links{display:flex;gap:36px;align-items:center;}
+  .nav-links a{font-size:.82rem;letter-spacing:.03em;color:var(--ink-dim);transition:color .25s;position:relative;}
+  .nav-links a:hover{color:var(--ink);}
+  .nav-links a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--bronze);transition:width .3s ease;}
+  .nav-links a:hover::after{width:100%;}
+  .nav-cta{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:11px 22px;border:1px solid var(--bronze);border-radius:2px;
+    font-size:.78rem;letter-spacing:.05em;color:var(--bronze-deep);
+    transition:background .3s ease,color .3s ease;
+  }
+  .nav-cta:hover{background:var(--bronze);color:#fff;}
+  .menu-btn{display:none;background:none;border:0;cursor:pointer;width:26px;height:18px;position:relative;}
+  .menu-btn span{position:absolute;left:0;right:0;height:1px;background:var(--ink);}
+  .menu-btn span:nth-child(1){top:0;}
+  .menu-btn span:nth-child(2){top:8px;}
+  .menu-btn span:nth-child(3){top:16px;}
+
+  .hero{
+    min-height:100vh;position:relative;display:flex;align-items:center;
+    padding-top:110px;padding-bottom:60px;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center;width:100%;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.22em;
+    color:var(--bronze-deep);text-transform:uppercase;margin-bottom:26px;display:flex;align-items:center;gap:14px;
+  }
+  .eyebrow::before{content:'';width:34px;height:1px;background:var(--bronze);display:inline-block;}
+  .hero h1{font-size:clamp(2.6rem,4.6vw,4.4rem);margin-bottom:26px;}
+  .hero h1 em{font-style:italic;color:var(--bronze-deep);font-weight:400;}
+  .hero p.lead{font-size:1.08rem;color:var(--ink-dim);max-width:480px;margin-bottom:40px;}
+  .hero-ctas{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:56px;}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:2px;
+    font-size:.86rem;letter-spacing:.04em;font-weight:600;transition:all .3s ease;
+  }
+  .btn-solid{background:var(--bronze);color:#fff;}
+  .btn-solid:hover{background:var(--bronze-deep);}
+  .btn-ghost{border:1px solid var(--line);color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--bronze);color:var(--bronze-deep);}
+  .hero-stats{display:flex;gap:44px;}
+  .stat b{display:block;font-family:'Fraunces',serif;font-size:2rem;color:var(--ink);}
+  .stat span{font-size:.74rem;color:var(--ink-dim);letter-spacing:.04em;}
+
+  .hero-visual{position:relative;height:560px;border-radius:2px;overflow:hidden;}
+  .hero-visual img{
+    width:100%;height:100%;object-fit:cover;filter:grayscale(18%) contrast(1.05) saturate(1.02);
+  }
+  .hero-visual::after{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(37,31,25,0) 45%, rgba(37,31,25,.72) 100%);
+  }
+  .hero-visual .tag{
+    position:absolute;left:24px;bottom:24px;z-index:2;
+    font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.12em;
+    color:#f1e9d8;text-transform:uppercase;
+  }
+
+  section{padding:150px 0;position:relative;}
+  .section-head{max-width:680px;margin-bottom:72px;}
+  .section-head .eyebrow{margin-bottom:20px;}
+  .section-head h2{font-size:clamp(2rem,3.4vw,3rem);}
+  .section-head p{color:var(--ink-dim);margin-top:22px;font-size:1.02rem;max-width:560px;}
+
+  .reveal{opacity:0;transform:translateY(36px);transition:opacity .9s ease, transform .9s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start;}
+  .about-photo{position:relative;}
+  .about-photo img{
+    width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(6%) contrast(1.03);
+    border-radius:2px;
+  }
+  .about-photo .frame{
+    position:absolute;inset:18px;border:1px solid var(--bronze);border-radius:2px;pointer-events:none;
+  }
+  .about-photo .cred{
+    margin-top:22px;padding-top:20px;border-top:1px solid var(--line);
+  }
+  .about-photo .cred b{display:block;font-family:'Fraunces',serif;font-size:1.15rem;}
+  .about-photo .cred span{font-size:.8rem;color:var(--ink-dim);}
+  .about-text p{color:var(--ink-dim);margin-bottom:20px;font-size:1.02rem;}
+  .about-text p strong{color:var(--ink);font-weight:600;}
+  .spec-list{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:16px 30px;}
+  .spec-list div{
+    padding:18px 0;border-top:1px solid var(--line);font-size:.92rem;color:var(--ink);
+    display:flex;gap:12px;align-items:baseline;
+  }
+  .spec-list div::before{content:'—';color:var(--bronze);font-family:'IBM Plex Mono',monospace;}
+
+  .treat-lead{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;
+    background:var(--bg-raise);border:1px solid var(--line);border-radius:2px;
+    padding:56px;margin-bottom:34px;
+  }
+  .treat-lead .badge{
+    display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.14em;
+    color:#fff;background:var(--bronze);padding:7px 14px;border-radius:2px;margin-bottom:22px;text-transform:uppercase;
+  }
+  .treat-lead h3{font-size:2rem;margin-bottom:18px;}
+  .treat-lead p{color:var(--ink-dim);margin-bottom:26px;}
+  .treat-lead-img{position:relative;border-radius:2px;overflow:hidden;aspect-ratio:4/3.4;}
+  .treat-lead-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(15%) contrast(1.05);}
+  .treat-list{list-style:none;margin:0;padding:0;}
+  .treat-list li{display:flex;gap:12px;margin-bottom:12px;font-size:.94rem;color:var(--ink);}
+  .treat-list li::before{content:'—';color:var(--bronze);}
+
+  .treat-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-bottom:34px;}
+  .treat-card{
+    border:1px solid var(--line);border-radius:2px;overflow:hidden;background:var(--bg-raise);
+    transition:transform .4s ease, border-color .4s ease;
+  }
+  .treat-card:hover{transform:translateY(-6px);border-color:var(--bronze);}
+  .treat-card .img-box{aspect-ratio:16/10;overflow:hidden;}
+  .treat-card .img-box img{width:100%;height:100%;object-fit:cover;filter:grayscale(15%) contrast(1.05);transition:transform .6s ease;}
+  .treat-card:hover .img-box img{transform:scale(1.06);}
+  .treat-card .card-body{padding:32px;}
+  .treat-card .card-body .num{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--bronze-deep);letter-spacing:.1em;margin-bottom:12px;display:block;}
+  .treat-card h4{font-size:1.4rem;margin-bottom:12px;}
+  .treat-card p{color:var(--ink-dim);font-size:.92rem;}
+
+  /* gallery */
+  .gallery{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:110px;gap:18px;}
+  .gallery figure{grid-column:span 2;grid-row:span 2;position:relative;border-radius:2px;overflow:hidden;margin:0;}
+  .gallery figure.tall{grid-row:span 3;}
+  .gallery figure.wide{grid-column:span 3;}
+  .gallery img{width:100%;height:100%;object-fit:cover;filter:grayscale(15%) contrast(1.05);transition:transform .6s ease;}
+  .gallery figure:hover img{transform:scale(1.07);}
+  .gallery figcaption{
+    position:absolute;left:14px;bottom:12px;z-index:2;
+    font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.1em;
+    color:#f5eee0;text-transform:uppercase;
+  }
+  .gallery figure::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(37,31,25,0) 55%, rgba(37,31,25,.65) 100%);}
+
+  .diff-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;}
+  .diff-visual{position:relative;border-radius:2px;overflow:hidden;aspect-ratio:3/4;}
+  .diff-visual img{width:100%;height:100%;object-fit:cover;filter:grayscale(15%) contrast(1.05);}
+  .diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+  .diff-item{padding:26px 0;border-top:1px solid var(--line);}
+  .diff-item:nth-child(odd){padding-right:30px;}
+  .diff-item:nth-child(even){padding-left:30px;border-left:1px solid var(--line);}
+  .diff-item h5{font-family:'Fraunces',serif;font-size:1.08rem;font-weight:500;margin-bottom:8px;}
+  .diff-item p{color:var(--ink-dim);font-size:.86rem;}
+
+  .process{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);}
+  .process-step{padding:44px 28px 0 0;border-right:1px solid var(--line);position:relative;}
+  .process-step:last-child{border-right:none;}
+  .process-step .step-num{font-family:'Fraunces',serif;font-size:2.6rem;color:var(--bronze);display:block;margin-bottom:18px;}
+  .process-step h5{font-size:1.1rem;margin-bottom:12px;}
+  .process-step p{color:var(--ink-dim);font-size:.88rem;}
+
+  .loc-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;}
+  .loc-card{border:1px solid var(--line);border-radius:2px;padding:44px;background:var(--bg-raise);}
+  .loc-card h3{font-size:1.6rem;margin-bottom:26px;}
+  .loc-row{display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--line);}
+  .loc-row:first-of-type{border-top:none;}
+  .loc-row .k{font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.1em;color:var(--bronze-deep);text-transform:uppercase;min-width:90px;}
+  .loc-row .v{font-size:.94rem;color:var(--ink);}
+  .map-frame{border:1px solid var(--line);border-radius:2px;overflow:hidden;min-height:420px;}
+  .map-frame iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(15%) contrast(1.02);}
+
+  footer{border-top:1px solid var(--line);padding:70px 0 40px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;margin-bottom:56px;}
+  .footer-brand h4{font-size:1.3rem;margin-bottom:14px;}
+  .footer-brand p{color:var(--ink-dim);font-size:.88rem;max-width:320px;}
+  .footer-col .ftitle{font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.14em;color:var(--bronze-deep);text-transform:uppercase;margin-bottom:18px;}
+  .footer-col a, .footer-col p{display:block;color:var(--ink-dim);font-size:.9rem;margin-bottom:10px;}
+  .footer-col a:hover{color:var(--ink);}
+  .footer-bottom{
+    border-top:1px solid var(--line);padding-top:26px;display:flex;justify-content:space-between;
+    font-size:.76rem;color:var(--ink-dim);flex-wrap:wrap;gap:10px;
+  }
+
+  .wa-float{
+    position:fixed;right:28px;bottom:28px;z-index:200;
+    display:flex;align-items:center;gap:10px;
+    background:var(--bronze);color:#fff;padding:16px 22px;border-radius:2px;
+    font-size:.84rem;font-weight:600;letter-spacing:.02em;
+    box-shadow:0 12px 30px rgba(37,31,25,.25);
+    transition:transform .3s ease, background .3s ease;
+  }
+  .wa-float:hover{transform:translateY(-3px);background:var(--bronze-deep);}
+  .wa-float svg{width:20px;height:20px;flex-shrink:0;}
+
+  @media (max-width:980px){
+    .wrap{padding:0 24px;}
+    .nav-links{position:fixed;top:0;right:0;height:100vh;width:78%;max-width:340px;
+      background:var(--bg-raise);flex-direction:column;justify-content:center;align-items:flex-start;
+      gap:30px;padding:40px;transform:translateX(100%);transition:transform .4s ease;border-left:1px solid var(--line);}
+    .nav-links.open{transform:translateX(0);}
+    .nav-cta{display:none;}
+    .menu-btn{display:block;}
+    .hero-grid, .about, .treat-lead, .diff-wrap, .loc-wrap{grid-template-columns:1fr;}
+    .hero-visual{height:380px;order:-1;}
+    .footer-grid{grid-template-columns:1fr;gap:36px;}
+    .process{grid-template-columns:1fr 1fr;}
+    .process-step{border-bottom:1px solid var(--line);padding-bottom:30px;}
+    .treat-grid-2{grid-template-columns:1fr;}
+    .diff-grid{grid-template-columns:1fr;}
+    .diff-item:nth-child(even){border-left:none;padding-left:0;}
+    section{padding:96px 0;}
+    .spec-list{grid-template-columns:1fr;}
+    .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px;}
+    .gallery figure{grid-column:span 1;grid-row:span 1;}
+    .gallery figure.tall{grid-row:span 1;}
+    .gallery figure.wide{grid-column:span 2;}
+  }
+  @media (max-width:560px){
+    .hero-ctas{flex-direction:column;}
+    .hero-stats{gap:28px;flex-wrap:wrap;}
+    .process{grid-template-columns:1fr;}
+    .wa-float span{display:none;}
+    .wa-float{padding:16px;border-radius:50%;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important; animation:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap">
+    <nav>
+      <a href="#top" class="brand">Dr. Kennedy Andrade<small>Duo Clinic · Medicina &amp; Odontologia</small></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#processo">Processo</a>
+        <a href="#local">Localização</a>
+        <a href="https://wa.me/5545991341212?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="nav-cta">Agendar</a>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Lipoaspiração fracionada · Minilipo</div>
+        <h1>O contorno certo é o que <em>respeita</em> o seu corpo.</h1>
+        <p class="lead">Dr. Kennedy Andrade conduz cada procedimento de contorno corporal com planejamento individual, técnicas modernas e minimamente invasivas — para um resultado natural, seguro e duradouro.</p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/5545991341212?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20minilipo." class="btn btn-solid">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.55 3.7-8.25 8.25-8.25 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.84c0 4.55-3.71 8.25-8.26 8.25Zm4.53-6.18c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.8.97-.15.17-.29.19-.54.06-.25-.12-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14 0-.31-.01-.47-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.89 2.41 1.02 2.58.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+            Agendar no WhatsApp
+          </a>
+          <a href="#tratamentos" class="btn btn-ghost">Conhecer os tratamentos</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>10+</b><span>anos de medicina</span></div>
+          <div class="stat"><b>4</b><span>anos em estética &amp; cirurgia corporal</span></div>
+          <div class="stat"><b class="mono">37638</b><span>CRM/PR</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <img src="https://images.unsplash.com/photo-1747398594110-70ac0f75e3bc?auto=format&fit=crop&w=1200&q=80" alt="Contorno abdominal — foco em lipoaspiração fracionada">
+        <span class="tag mono">Contorno corporal · Foco em resultado natural</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-photo reveal">
+        <img src="kennedy-andrade.jpg" alt="Dr. Kennedy Andrade">
+        <div class="frame"></div>
+        <div class="cred">
+          <b>Dr. Kennedy Andrade</b>
+          <span class="mono">CRM/PR 37638 — Duo Clinic Medicina &amp; Odontologia</span>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <div class="eyebrow">Sobre o médico</div>
+        <h2 style="margin-bottom:26px;">Uma trajetória construída na urgência, refinada na estética.</h2>
+        <p>Médico formado há <strong>10 anos</strong>, com sólida experiência em urgência, emergência e terapia intensiva — áreas que fortaleceram sua capacidade técnica, segurança na tomada de decisões e cuidado com pacientes em situações de alta complexidade.</p>
+        <p>Nos últimos <strong>quatro anos</strong>, direcionou sua atuação para a medicina estética e as cirurgias corporais, dedicando-se ao aperfeiçoamento contínuo em técnicas modernas e minimamente invasivas. O foco é proporcionar resultados naturais, respeitando a individualidade de cada paciente — sempre priorizando segurança, ética e excelência.</p>
+        <div class="spec-list">
+          <div>Formação contínua em cirurgia estética</div>
+          <div>Aperfeiçoamento em transplante capilar</div>
+          <div>Aperfeiçoamento em blefaroplastia</div>
+          <div>Procedimentos dermatológicos e estética facial</div>
+          <div>Experiência em urgência e emergência</div>
+          <div>Planejamento individual em cada caso</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tratamentos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Tratamentos</div>
+      <h2>Especialidade em contorno, com apoio em rosto e cabelo.</h2>
+      <p>O atendimento tem foco declarado em lipoaspiração fracionada — o procedimento de maior domínio técnico e volume de casos. Cirurgias faciais e transplante capilar completam o portfólio como segundo plano de atuação.</p>
+    </div>
+
+    <div class="treat-lead reveal">
+      <div>
+        <span class="badge mono">Procedimento principal</span>
+        <h3>Lipoaspiração Fracionada (Minilipo)</h3>
+        <p>Técnica minimamente invasiva para remoção localizada de gordura, com incisões reduzidas e recuperação mais confortável. Indicada para quem busca definição e naturalidade sem grandes intervenções.</p>
+        <ul class="treat-list">
+          <li>Planejamento individual da área a tratar</li>
+          <li>Técnica fracionada, minimamente invasiva</li>
+          <li>Acompanhamento próximo no pós-operatório</li>
+        </ul>
+      </div>
+      <div class="treat-lead-img">
+        <img src="https://images.unsplash.com/photo-1653848067570-ccc640e5b3cc?auto=format&fit=crop&w=1000&q=80" alt="Contorno corporal — minilipo">
+      </div>
+    </div>
+
+    <div class="treat-grid-2">
+      <div class="treat-card reveal">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1555820585-c5ae44394b79?auto=format&fit=crop&w=900&q=80" alt="Perfil facial — cervicoplastia"></div>
+        <div class="card-body">
+          <span class="num mono">02 — Segundo plano</span>
+          <h4>Cervicoplastia</h4>
+          <p>Cirurgia para redefinir o contorno do pescoço, suavizando a flacidez e restaurando um ângulo cervicomentoniano mais definido.</p>
+        </div>
+      </div>
+      <div class="treat-card reveal">
+        <div class="img-box"><img src="https://images.unsplash.com/photo-1638663188385-9783df89454a?auto=format&fit=crop&w=900&q=80" alt="Cuidado capilar — transplante capilar"></div>
+        <div class="card-body">
+          <span class="num mono">03 — Segundo plano</span>
+          <h4>Transplante Capilar</h4>
+          <p>Restauração da densidade capilar com técnica moderna, planejada de acordo com a linha de implantação natural de cada paciente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Galeria</div>
+      <h2>Procedimentos e estrutura da clínica.</h2>
+      <p>Um retrato dos cuidados oferecidos — do planejamento do contorno corporal à estrutura pensada para o conforto do paciente.</p>
+    </div>
+    <div class="gallery reveal">
+      <figure class="tall"><img src="https://images.unsplash.com/photo-1747398594110-70ac0f75e3bc?auto=format&fit=crop&w=700&q=80" alt="Minilipo — contorno abdominal"><figcaption>Minilipo</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1543421277-42c35865dc93?auto=format&fit=crop&w=700&q=80" alt="Textura de pele — cuidado dermatológico"><figcaption>Pele &amp; contorno</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1555820585-c5ae44394b79?auto=format&fit=crop&w=700&q=80" alt="Perfil facial — cervicoplastia"><figcaption>Cervicoplastia</figcaption></figure>
+      <figure class="wide"><img src="https://images.unsplash.com/photo-1470290378698-263fa7ca60ab?auto=format&fit=crop&w=1000&q=80" alt="Recepção da clínica"><figcaption>Estrutura da clínica</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1512663150964-d8f43c899f76?auto=format&fit=crop&w=700&q=80" alt="Cabelo — transplante capilar"><figcaption>Transplante capilar</figcaption></figure>
+      <figure class="wide"><img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1000&q=80" alt="Ambiente moderno da clínica"><figcaption>Ambiente &amp; conforto</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="diferenciais">
+  <div class="wrap">
+    <div class="diff-wrap">
+      <div class="diff-visual reveal">
+        <img src="https://images.unsplash.com/photo-1593204385501-f8c40fbaccef?auto=format&fit=crop&w=900&q=80" alt="Resultado natural — confiança">
+      </div>
+      <div class="reveal">
+        <div class="eyebrow">Diferenciais</div>
+        <h2 style="margin-bottom:10px;">O que sustenta cada procedimento.</h2>
+        <div class="diff-grid" style="margin-top:36px;">
+          <div class="diff-item">
+            <h5>Atendimento individualizado</h5>
+            <p>Cada caso é avaliado de forma única, sem protocolos genéricos.</p>
+          </div>
+          <div class="diff-item">
+            <h5>Planejamento personalizado</h5>
+            <p>Estratégia cirúrgica definida conforme anatomia e objetivo do paciente.</p>
+          </div>
+          <div class="diff-item">
+            <h5>Técnicas modernas</h5>
+            <p>Atualização constante em métodos minimamente invasivos.</p>
+          </div>
+          <div class="diff-item">
+            <h5>Segurança em primeiro lugar</h5>
+            <p>Experiência sólida em urgência e terapia intensiva aplicada à estética.</p>
+          </div>
+          <div class="diff-item">
+            <h5>Acompanhamento no pós-operatório</h5>
+            <p>Presença próxima em toda a recuperação do paciente.</p>
+          </div>
+          <div class="diff-item">
+            <h5>Foco em resultados naturais</h5>
+            <p>Harmonia entre expectativa e anatomia real do paciente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="processo">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Como funciona</div>
+      <h2>Da avaliação ao acompanhamento.</h2>
+    </div>
+    <div class="process reveal">
+      <div class="process-step">
+        <span class="step-num mono">01</span>
+        <h5>Avaliação</h5>
+        <p>Conversa detalhada sobre histórico, objetivos e expectativas do paciente.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num mono">02</span>
+        <h5>Planejamento</h5>
+        <p>Definição da técnica e do plano cirúrgico individual mais adequado.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num mono">03</span>
+        <h5>Procedimento</h5>
+        <p>Execução com segurança, em estrutura moderna e confortável.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num mono">04</span>
+        <h5>Acompanhamento</h5>
+        <p>Retornos programados para garantir uma recuperação tranquila.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="local">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Localização &amp; contato</div>
+      <h2>Duo Clinic Medicina &amp; Odontologia.</h2>
+    </div>
+    <div class="loc-wrap reveal">
+      <div class="loc-card">
+        <h3>Informações</h3>
+        <div class="loc-row"><span class="k mono">Endereço</span><span class="v">Avenida José Maria de Brito, 1567</span></div>
+        <div class="loc-row"><span class="k mono">Horário</span><span class="v">Segunda a sexta, das 08h às 18h</span></div>
+        <div class="loc-row"><span class="k mono">Telefone</span><span class="v">(45) 99134-1212</span></div>
+        <div class="loc-row"><span class="k mono">E-mail</span><span class="v">duoclinicmedodonto@gmail.com</span></div>
+        <div style="margin-top:30px;">
+          <a href="https://wa.me/5545991341212?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn btn-solid">Falar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps?q=Avenida+Jos%C3%A9+Maria+de+Brito,+1567&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização Duo Clinic"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>Dr. Kennedy Andrade</h4>
+        <p>Atuação em lipoaspiração fracionada, contorno corporal e procedimentos estéticos. Duo Clinic Medicina &amp; Odontologia — CRM/PR 37638.</p>
+      </div>
+      <div class="footer-col">
+        <div class="ftitle mono">Navegação</div>
+        <a href="#sobre">Sobre</a>
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#local">Localização</a>
+      </div>
+      <div class="footer-col">
+        <div class="ftitle mono">Contato</div>
+        <p>(45) 99134-1212</p>
+        <p>duoclinicmedodonto@gmail.com</p>
+        <p>Avenida José Maria de Brito, 1567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Duo Clinic Medicina &amp; Odontologia — Dr. Kennedy Andrade, CRM/PR 37638.</span>
+      <span>Resultados variam de paciente para paciente.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5545991341212?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.55 3.7-8.25 8.25-8.25 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.84c0 4.55-3.71 8.25-8.26 8.25Zm4.53-6.18c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.8.97-.15.17-.29.19-.54.06-.25-.12-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14 0-.31-.01-.47-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.89 2.41 1.02 2.58.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
